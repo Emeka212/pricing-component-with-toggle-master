@@ -1,0 +1,200 @@
+/*Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution { margin-bottom: 10px;font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+	padding: 0px;
+	margin: 0px;
+	background: hsl(240, 78%, 98%);
+	font-family: Arial;
+	font-family: [Montserrat](https://fonts.google.com/specimen/Montserrat);
+}
+.bg_top{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.bg_bottom{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+.top_section{
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+}
+.top_section h1{
+	position: relative;
+	color: hsl(233, 13%, 49%);
+	text-align: center;
+}
+.top_section_row{
+	position: relative;
+	margin-left: 52%;
+	margin-top: 30px;
+	transform: translateX(-50%);
+	width: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	color: hsl(234, 14%, 74%);
+	font-weight: bold;
+}
+.top_section_row div{
+	margin-right: 30px;
+}
+.top_section_row .switch_Annually,.switch_Monthly{
+    position: relative;
+    top: -8px;
+    width: 60px;
+    height: 27px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid hsl(237, 63%, 64%);
+    border-radius: 50px;
+    transition: 1s;
+    background-image: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.top_section_row .switch_Annually::after,.switch_Monthly::after{
+	content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    top: 0.8px;
+    left: 1px;
+    border-radius: 100%;
+}
+.top_section_row .switch_Monthly{
+	display: none;
+}
+.top_section_row .switch_Monthly::after{
+	left: 100%;
+	margin-left: -26px;
+	background: #fff;
+}
+.all_card{
+	position: relative;
+	margin-top: 50px;
+	left: 50%;
+	width: 960px;
+	transform: translateX(-50%);
+	display: inline-flex;
+	flex-wrap: wrap;
+	backgroun: red;
+	padding: 20px 0px 20px 0px;
+	margin-bottom: 30px;
+}
+.all_card .left_card,.middle_card,.right_card{
+	width: 300px;
+	padding: 10px;
+	background: #fff;
+	color: hsl(233, 13%, 49%);
+	margin-left: 0px;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0px 2px 10px 1px lightgray;
+}
+.all_card span{
+	position: relative;
+	top: 20px;
+	font-weight: bold;
+}
+.all_card .monthly{
+	display: none;
+}
+.all_card h2{
+	font-size: 60px;
+	color: hsl(232, 13%, 33%)
+}
+.all_card .left_card div,.middle_card div,.right_card div{
+	font-weight: bold;
+	position: relative;
+	top: -20px;
+	font-size: 15px;
+	width: 90%;	
+	margin-left: 5%;
+	padding: 15px 0px 15px 0px;
+	border-top: 1px solid hsl(234, 14%, 74%);
+}
+.all_card button{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	font-size: 12px;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid hsl(237, 63%, 64%);
+	background-image: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.all_card .middle_card{
+	transform: scale(1.1);
+	position: relative;
+	color: #fff;
+	background-image: linear-gradient(60deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.all_card .middle_card div{
+	border-top: 2px solid hsl(236, 72%, 79%);
+}
+.all_card .middle_card h2{
+	color: #fff !important;
+}
+.all_card .middle_card button{
+	background: #fff;
+	color: hsl(237, 63%, 64%);
+	font-weight: bold;
+}
+.all_card button:hover{
+	background: transparent;
+	color: hsl(237, 63%, 64%);
+}
+.all_card .middle_card button:hover{
+	color: #fff;
+}
+
+@media screen and (max-width: 980px){
+	.all_card{
+	width: 815px;
+    }
+	.all_card .left_card,.middle_card,.right_card{
+		width: 250px;
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 850px){
+	.all_card{
+		width: 280px;
+		display: block;
+		top: -50px;
+	}
+	.all_card .left_card,.middle_card,.right_card{
+		width: 100%;
+		padding: 0px;
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 500px){
+	body{
+		overflow-x: hidden;
+	}
+	.bg_top{
+		margin-right: -200px;
+	}
+	.bg_bottom{
+		display: none;
+	}
+	.all_card{
+		width: 90%;
+		display: block;
+		top: -50px;
+	}
+    .all_card .left_card,.middle_card,.right_card{
+		width: 100%;
+		padding: 0px;
+		margin-top: 50px;
+	}
+}
+
+
